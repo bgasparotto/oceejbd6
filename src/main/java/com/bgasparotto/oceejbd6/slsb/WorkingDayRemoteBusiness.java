@@ -1,6 +1,6 @@
 package com.bgasparotto.oceejbd6.slsb;
 
-import javax.ejb.Local;
+import javax.ejb.Remote;
 
 /**
  * Remote business interface for the WorkingDay EJB.
@@ -8,7 +8,7 @@ import javax.ejb.Local;
  * @author Bruno Gasparotto
  *
  */
-@Local
+@Remote
 public interface WorkingDayRemoteBusiness extends WorkingDayCommonBusiness {
 
 }

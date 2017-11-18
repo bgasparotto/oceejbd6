@@ -14,7 +14,7 @@ public interface WorkingDayCommonBusiness {
 
 	/**
 	 * Check whether a date is a working day. This method doesn't consider
-	 * holidays for simplicity purposes.
+	 * holidays for simplicity purposes, it considers just weekends instead.
 	 * 
 	 * @param date
 	 *            Date to be checked
@@ -29,7 +29,7 @@ public interface WorkingDayCommonBusiness {
 	/**
 	 * Check whether a date represented by a {@code Calendar}'s object is a
 	 * working day. This method doesn't consider holidays for simplicity
-	 * purposes.
+	 * purposes, it considers just weekends instead.
 	 * 
 	 * @param calendar
 	 *            Calendar to be checked
