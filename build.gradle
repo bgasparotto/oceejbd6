@@ -1,0 +1,34 @@
+/* Main plugins. */
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = 1.6
+version = '1.0'
+jar {
+    manifest {
+        attributes 	'Implementation-Title': 'OCEEJBD6', 
+        			'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main.compileClasspath += configurations.provided
+    test.compileClasspath += configurations.provided
+    test.runtimeClasspath += configurations.provided
+}
+
+eclipse.classpath.plusConfigurations += [configurations.provided]
+
+dependencies {    
+    /* Java EE 6 API. */
+    provided 'javax:javaee-api:6.0'
+} 
