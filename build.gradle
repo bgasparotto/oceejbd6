@@ -28,7 +28,8 @@ sourceSets {
 
 eclipse.classpath.plusConfigurations += [configurations.provided]
 
-dependencies {    
-    /* Java EE 6 API. */
-    provided 'javax:javaee-api:6.0'
+dependencies {
+    
+    /* Java EE 6 API with sources from JBoss. */
+    provided 'org.jboss.spec:jboss-javaee-6.0:3.0.3.Final'
 } 
