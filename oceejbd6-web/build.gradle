@@ -22,6 +22,9 @@ eclipse.classpath.plusConfigurations += [configurations.provided]
 	
 dependencies {
 
+	/* EJB module */
+	compile project(path: ':oceejbd6-ejb')
+
 	/* Java EE 6 API with sources from JBoss. */
 	provided 'org.jboss.spec:jboss-javaee-6.0:3.0.3.Final'
 }
