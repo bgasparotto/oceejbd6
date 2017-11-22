@@ -1,0 +1,2 @@
+include 'oceejbd6-ejb'
+include 'oceejbd6-web'

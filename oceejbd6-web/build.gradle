@@ -1,0 +1,27 @@
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = 1.6
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+	
+configurations {
+	provided
+}
+
+sourceSets {
+	main.compileClasspath += configurations.provided
+	test.compileClasspath += configurations.provided
+	test.runtimeClasspath += configurations.provided
+}
+
+eclipse.classpath.plusConfigurations += [configurations.provided]
+	
+dependencies {
+
+	/* Java EE 6 API with sources from JBoss. */
+	provided 'org.jboss.spec:jboss-javaee-6.0:3.0.3.Final'
+}
