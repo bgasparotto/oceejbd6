@@ -1,4 +1,4 @@
-package com.bgasparotto.oceejbd6.slsb;
+package com.bgasparotto.oceejbd6.ejb3;
 
 import javax.ejb.Remote;
 
